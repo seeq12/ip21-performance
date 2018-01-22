@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IP21Performance {
 
-    internal class AdoNetDataAdapter : Method {
+    internal class AdoNetDataAdapterMethod : Method {
 
         public string Go(string hostname, string port, string username, string password, string tag, DateTime startTime, DateTime endTime) {
             string output = "";
@@ -48,7 +44,7 @@ namespace IP21Performance {
                         for (int i = 0; i < 2; i++) {
                             Stopwatch stopwatch = new Stopwatch();
                             stopwatch.Start();
-                            int recordsReturned = adapter.Fill(dataSet, 0, 1000, "Table");
+                            int recordsReturned = adapter.Fill(dataSet);
                             stopwatch.Stop();
 
                             output += string.Format("Query {3}: IP21 data page returned {0} samples in {1} ms, which is {2} samples per second\n",

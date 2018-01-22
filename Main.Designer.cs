@@ -41,6 +41,8 @@
             this.textBoxTag = new System.Windows.Forms.TextBox();
             this.labelTag = new System.Windows.Forms.Label();
             this.labelWorking = new System.Windows.Forms.Label();
+            this.buttonAtTagBrowserSQLplus = new System.Windows.Forms.Button();
+            this.buttonODBC = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxOutput
@@ -53,7 +55,7 @@
             this.textBoxOutput.Multiline = true;
             this.textBoxOutput.Name = "textBoxOutput";
             this.textBoxOutput.ReadOnly = true;
-            this.textBoxOutput.Size = new System.Drawing.Size(824, 291);
+            this.textBoxOutput.Size = new System.Drawing.Size(824, 108);
             this.textBoxOutput.TabIndex = 0;
             // 
             // labelHostname
@@ -126,7 +128,7 @@
             // 
             this.buttonAdoNetDataAdapter.Location = new System.Drawing.Point(15, 123);
             this.buttonAdoNetDataAdapter.Name = "buttonAdoNetDataAdapter";
-            this.buttonAdoNetDataAdapter.Size = new System.Drawing.Size(75, 23);
+            this.buttonAdoNetDataAdapter.Size = new System.Drawing.Size(154, 23);
             this.buttonAdoNetDataAdapter.TabIndex = 9;
             this.buttonAdoNetDataAdapter.Text = "ADO.NET Data Adapter";
             this.buttonAdoNetDataAdapter.UseVisualStyleBackColor = true;
@@ -203,11 +205,33 @@
             this.labelWorking.TabIndex = 17;
             this.labelWorking.Text = "Working...";
             // 
+            // buttonAtTagBrowserSQLplus
+            // 
+            this.buttonAtTagBrowserSQLplus.Location = new System.Drawing.Point(175, 123);
+            this.buttonAtTagBrowserSQLplus.Name = "buttonAtTagBrowserSQLplus";
+            this.buttonAtTagBrowserSQLplus.Size = new System.Drawing.Size(154, 23);
+            this.buttonAtTagBrowserSQLplus.TabIndex = 18;
+            this.buttonAtTagBrowserSQLplus.Text = "AtTagBrowserSQLplus";
+            this.buttonAtTagBrowserSQLplus.UseVisualStyleBackColor = true;
+            this.buttonAtTagBrowserSQLplus.Click += new System.EventHandler(this.buttonAtTagBrowserSQLplus_Click);
+            // 
+            // buttonODBC
+            // 
+            this.buttonODBC.Location = new System.Drawing.Point(335, 123);
+            this.buttonODBC.Name = "buttonODBC";
+            this.buttonODBC.Size = new System.Drawing.Size(154, 23);
+            this.buttonODBC.TabIndex = 19;
+            this.buttonODBC.Text = "ODBC";
+            this.buttonODBC.UseVisualStyleBackColor = true;
+            this.buttonODBC.Click += new System.EventHandler(this.buttonODBC_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(848, 455);
+            this.ClientSize = new System.Drawing.Size(848, 272);
+            this.Controls.Add(this.buttonODBC);
+            this.Controls.Add(this.buttonAtTagBrowserSQLplus);
             this.Controls.Add(this.labelWorking);
             this.Controls.Add(this.textBoxEndTime);
             this.Controls.Add(this.labelEndTime);
@@ -253,6 +277,8 @@
         private System.Windows.Forms.TextBox textBoxTag;
         private System.Windows.Forms.Label labelTag;
         private System.Windows.Forms.Label labelWorking;
+        private System.Windows.Forms.Button buttonAtTagBrowserSQLplus;
+        private System.Windows.Forms.Button buttonODBC;
     }
 }
 

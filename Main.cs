@@ -10,10 +10,6 @@ namespace IP21Performance {
             this.working(false);
         }
 
-        private void buttonAdoNetDataAdapter_Click(object sender, EventArgs e) {
-            this.go(new AdoNetDataAdapter());
-        }
-
         private void working(Boolean working) {
             this.labelWorking.Visible = working;
             this.Refresh();
@@ -33,6 +29,18 @@ namespace IP21Performance {
             }
 
             this.working(false);
+        }
+
+        private void buttonAdoNetDataAdapter_Click(object sender, EventArgs e) {
+            this.go(new AdoNetDataAdapterMethod());
+        }
+
+        private void buttonAtTagBrowserSQLplus_Click(object sender, EventArgs e) {
+            this.go(new AtTagBrowserMethod());
+        }
+
+        private void buttonODBC_Click(object sender, EventArgs e) {
+            this.go(new OdbcMethod());
         }
     }
 }
