@@ -149,7 +149,7 @@
             this.textBoxEndTime.Name = "textBoxEndTime";
             this.textBoxEndTime.Size = new System.Drawing.Size(186, 20);
             this.textBoxEndTime.TabIndex = 16;
-            this.textBoxEndTime.Text = "2018-01-19T18:00:00.000Z";
+            this.textBoxEndTime.Text = "2019-07-04T10:00:00.000Z";
             // 
             // labelEndTime
             // 
@@ -166,7 +166,7 @@
             this.textBoxStartTime.Name = "textBoxStartTime";
             this.textBoxStartTime.Size = new System.Drawing.Size(195, 20);
             this.textBoxStartTime.TabIndex = 14;
-            this.textBoxStartTime.Text = "2018-01-19T16:00:00.000Z";
+            this.textBoxStartTime.Text = "2019-07-04T09:00:00.000Z";
             // 
             // labelStartTime
             // 
